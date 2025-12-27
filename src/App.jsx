@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
-import Contact from './components/Contact'; // <--- Importe aqui
+import Contact from './components/Contact';
+import About from './components/About';
 import { translations } from './data/translations';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <main>
         <Hero texts={currentTexts.hero} />
         <Projects language={language} />
+        <About language={language} />
         <Contact language={language} />
       </main>
 

@@ -67,7 +67,7 @@ export const projects = [
         title: "MeuEcommerceApp",
         category: "college",
         // Imagem: Celular com aplicativo
-        img: "/icone.png",
+        img: "/icone.jpg",
         desc_pt: "App mobile completo com Firebase e Internacionalização.",
         desc_en: "Full mobile app with Firebase and Internationalization.",
         long_desc_pt: "Protótipo Mobile de alta fidelidade desenvolvido com React Native. Possui funcionalidades reais: autenticação segura, carrinho de compras e suporte nativo a múltiplos idiomas.",
