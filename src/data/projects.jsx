@@ -111,7 +111,7 @@ export const projects = [
         desc_en: "Collection of classic algorithms: Tetris, Sudoku, Chat.",
         long_desc_pt: "Um conjunto de projetos focados em lógica pura e estruturas de dados. Inclui um Chat funcional via Sockets (Java), Tetris e Sudoku (Python).",
         long_desc_en: "A set of projects focused on pure logic and data structures. Includes a functional Chat via Sockets (Java), Tetris and Sudoku (Python).",
-        gitUrl: "#",
+        gitUrl: "https://github.com/Lu1zEdu/Projetinho",
         previewUrl: "#",
         tech_details: [
             { name: "Java Sockets", icon: <FaJava className="text-orange-600" />, purpose_pt: "Redes.", purpose_en: "Networking." },
@@ -129,8 +129,8 @@ export const projects = [
         desc_en: "Banking and scientific systems in Cobol & Fortran.",
         long_desc_pt: "Exploração de linguagens fundamentais. Projetos incluem um Sistema Bancário Simples (Cobol) e Simulações Físicas (Fortran).",
         long_desc_en: "Exploration of fundamental languages. Projects include a Simple Banking System (Cobol) and Physics Simulations (Fortran).",
-        gitUrl: "#",
-        previewUrl: "#",
+        gitUrl: "https://github.com/Lu1zEdu/Fortran.git",
+        previewUrl: "https://github.com/Lu1zEdu/Cobol",
         tech_details: [
             { name: "COBOL", icon: <FaTerminal className="text-green-500" />, purpose_pt: "Sistemas Legados.", purpose_en: "Legacy Systems." },
             { name: "Fortran", icon: <FaCode className="text-blue-500" />, purpose_pt: "Cálculo Científico.", purpose_en: "Scientific." },

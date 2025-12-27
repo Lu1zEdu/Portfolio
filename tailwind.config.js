@@ -7,10 +7,16 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: "#09090b",   // Preto quase absoluto (Zinco)
-                secondary: "#18181b", // Cinza muito escuro para cards
-                accent: "#06b6d4",    // Ciano Neon (Cyan-500)
-                txt: "#e4e4e7",       // Branco gelo
+                primary: "#09090b",
+                secondary: "#18181b",
+                accent: "#06b6d4",
+                txt: "#e4e4e7",
+            },
+            boxShadow: {
+                'neon': '0 0 20px -5px rgba(6, 182, 212, 0.5)',
+            },
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
             }
         },
     },

@@ -1,16 +1,61 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Portfólio Profissional | Luiz Eduardo
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Um portfólio interativo, bilíngue e moderno desenvolvido para demonstrar projetos Full Stack e habilidades técnicas avançadas.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎨 Sobre o Projeto
 
-## Expanding the ESLint configuration
+Este projeto é um **Portfólio Pessoal** desenvolvido com o ecossistema React moderno. O objetivo é apresentar minha jornada como **Desenvolvedor Full Stack**, exibindo projetos, competências técnicas e experiências profissionais de forma visualmente impactante.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✨ Destaques Visuais
+* **Tema Cyberpunk:** Design escuro com acentos em Ciano Neon (`#06b6d4`) para uma estética tecnológica.
+* **Interatividade 3D:** Cards de estatísticas com efeito de profundidade (`react-tilt`).
+* **Timeline Expansível:** Seção "Sobre Mim" com acordeão interativo para exibir cursos e certificações.
+* **Internacionalização (i18n):** Suporte completo para **Português (PT-BR)** e **Inglês (EN-US)** com troca instantânea.
+* **Animações:** Transições suaves, efeitos de hover e modals dinâmicos.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+O projeto foi construído utilizando as melhores práticas do desenvolvimento web moderno:
+
+* **Core:** [React 19](https://react.dev/) + [Vite](https://vitejs.dev/) (Performance extrema).
+* **Estilização:** [Tailwind CSS](https://tailwindcss.com/) (Design responsivo e utilitário).
+* **Ícones:** [React Icons](https://react-icons.github.io/react-icons/) (FontAwesome `fa` family).
+* **Efeitos Visuais:** [React Tilt](https://www.npmjs.com/package/react-tilt) (Efeito de paralaxe 3D).
+* **Deploy:** Vercel / Netlify (Compatível).
+
+---
+
+## 🧩 Estrutura do Projeto
+
+O código é organizado em componentes modulares para facilitar a manutenção e escalabilidade:
+
+```bash
+src/
+├── assets/          # Imagens e vetores (Perfil, Ícones)
+├── components/      # Componentes Reutilizáveis
+│   ├── Hero.jsx     # Seção de apresentação principal
+│   ├── About.jsx    # Timeline de carreira e cursos
+│   ├── Skills.jsx   # Grid de tecnologias e stats do GitHub
+│   ├── Projects.jsx # Galeria filtrável com Modals
+│   └── Contact.jsx  # Links diretos (WhatsApp, Discord, Email)
+├── data/            # Dados estáticos (Projetos, Traduções)
+└── theme/           # Configurações globais de estilo
+
+```
+
+
+---
+
+<p align="center">
+Desenvolvido com 💙 e muito café por <strong>Luiz Eduardo</strong>.
+</p>
