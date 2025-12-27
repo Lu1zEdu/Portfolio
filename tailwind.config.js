@@ -7,10 +7,10 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: "#0f172a",
-                secondary: "#1e293b",
-                accent: "#8b5cf6",
-                txt: "#f1f5f9",
+                primary: "#09090b",   // Preto quase absoluto (Zinco)
+                secondary: "#18181b", // Cinza muito escuro para cards
+                accent: "#06b6d4",    // Ciano Neon (Cyan-500)
+                txt: "#e4e4e7",       // Branco gelo
             }
         },
     },
