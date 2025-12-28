@@ -17,10 +17,8 @@ const Contact = ({ language }) => {
                         : 'Get in touch for freelance quotes or professional opportunities.'}
                 </p>
 
-                {/* GRID 2x2 PARA OS 4 CONTATOS */}
                 <div className='grid md:grid-cols-2 gap-6'>
 
-                    {/* LINKEDIN */}
                     <a href="https://www.linkedin.com/in/luiz-eduardo-da-silva-pinto-b2a190302/" target="_blank" rel="noreferrer" className='group bg-[#1e293b] p-6 rounded-2xl border border-gray-700 hover:border-blue-500 transition cursor-pointer flex items-center gap-4 hover:bg-blue-900/10'>
                         <div className='p-3 bg-gray-800 rounded-full text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition'>
                             <FaLinkedin size={24} />
@@ -31,7 +29,6 @@ const Contact = ({ language }) => {
                         </div>
                     </a>
 
-                    {/* EMAIL (Link direto Mailto) */}
                     <a href="mailto:le6269199@gmail.com" className='group bg-[#1e293b] p-6 rounded-2xl border border-gray-700 hover:border-accent transition cursor-pointer flex items-center gap-4 hover:bg-accent/10'>
                         <div className='p-3 bg-gray-800 rounded-full text-accent group-hover:bg-accent group-hover:text-white transition'>
                             <FaEnvelope size={24} />
@@ -42,7 +39,6 @@ const Contact = ({ language }) => {
                         </div>
                     </a>
 
-                    {/* TELEGRAM */}
                     <a href="https://t.me/@M3rl1m15" target="_blank" rel="noreferrer" className='group bg-[#1e293b] p-6 rounded-2xl border border-gray-700 hover:border-blue-400 transition cursor-pointer flex items-center gap-4 hover:bg-blue-400/10'>
                         <div className='p-3 bg-gray-800 rounded-full text-blue-400 group-hover:bg-blue-400 group-hover:text-white transition'>
                             <FaTelegramPlane size={24} />

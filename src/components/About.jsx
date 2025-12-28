@@ -5,14 +5,12 @@ import {
 } from 'react-icons/fa';
 
 const About = ({ language }) => {
-    // Estado para controlar qual item está expandido (Accordion)
     const [expandedId, setExpandedId] = useState(null);
 
     const toggleExpand = (id) => {
         setExpandedId(expandedId === id ? null : id);
     };
 
-    // Dados dos Cursos
     const coursesData = {
         FIAP: [
             "Desenvolvimento .NET (2025)",
@@ -39,7 +37,7 @@ const About = ({ language }) => {
             desc_pt: "Foco em arquitetura de software, Java, .NET e Inovação.",
             desc_en: "Focus on software architecture, Java, .NET and Innovation.",
             icon: <FaGraduationCap />,
-            hasCourses: true // Indica que este item pode expandir
+            hasCourses: true
         },
         {
             id: 2,
@@ -70,8 +68,7 @@ const About = ({ language }) => {
         <div id='about' className='w-full py-16 px-4 bg-[#0f172a] text-gray-300'>
             <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 gap-12 items-start'>
 
-                {/* COLUNA 1: TEXTO + BOTÃO */}
-                <div className='sticky top-24'> {/* Sticky deixa o texto fixo enquanto a timeline rola */}
+                <div className='sticky top-24'>
                     <p className='text-xl tracking-widest uppercase text-accent font-bold mb-4'>
                         {language === 'pt' ? 'Sobre Mim' : 'About Me'}
                     </p>
@@ -98,16 +95,13 @@ const About = ({ language }) => {
                     </a>
                 </div>
 
-                {/* COLUNA 2: TIMELINE (ACCORDION) */}
                 <div className='relative pl-4'>
-                    {/* Linha vertical contínua */}
                     <div className='absolute left-[27px] top-0 bottom-0 w-0.5 bg-gray-700'></div>
 
                     <div className='space-y-12'>
                         {timeline.map((item) => (
                             <div key={item.id} className='relative group'>
 
-                                {/* ÍCONE (Bolinha) */}
                                 <div className='absolute left-[-22px] top-0 z-10'>
                                     {item.link ? (
                                         <a
@@ -133,7 +127,6 @@ const About = ({ language }) => {
                                     )}
                                 </div>
 
-                                {/* CONTEÚDO DO CARD */}
                                 <div
                                     className={`ml-8 transition-all duration-300 ${item.hasCourses ? 'cursor-pointer' : ''}`}
                                     onClick={() => item.hasCourses && toggleExpand(item.id)}
@@ -149,7 +142,6 @@ const About = ({ language }) => {
                                                 {language === 'pt' ? item.title_detail_pt : item.title_detail_en}
                                             </p>
                                         </div>
-                                        {/* Seta indicando expansão */}
                                         {item.hasCourses && (
                                             <div className='text-gray-400 mt-2'>
                                                 {expandedId === item.id ? <FaChevronUp /> : <FaChevronDown />}
@@ -161,7 +153,6 @@ const About = ({ language }) => {
                                         {language === 'pt' ? item.desc_pt : item.desc_en}
                                     </p>
 
-                                    {/* ÁREA EXPANDÍVEL (CURSOS) */}
                                     <div className={`grid transition-all duration-500 ease-in-out overflow-hidden ${expandedId === item.id ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'
                                         }`}>
                                         <div className='min-h-0 bg-[#1e293b] rounded-xl p-6 border border-gray-700 shadow-inner'>
@@ -171,7 +162,6 @@ const About = ({ language }) => {
                                             </h5>
 
                                             <div className="space-y-4">
-                                                {/* FIAP */}
                                                 <div>
                                                     <h6 className="text-accent text-xs font-bold uppercase mb-2">FIAP</h6>
                                                     <ul className="space-y-1">
@@ -184,7 +174,6 @@ const About = ({ language }) => {
                                                     </ul>
                                                 </div>
 
-                                                {/* ALURA */}
                                                 <div>
                                                     <h6 className="text-blue-400 text-xs font-bold uppercase mb-2">Alura</h6>
                                                     <ul className="space-y-1">

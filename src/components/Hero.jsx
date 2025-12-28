@@ -14,7 +14,6 @@ const Hero = ({ texts }) => {
                         {texts.greeting} <span className='text-accent'>Luiz Eduardo</span>
                     </h1>
                     <h2 className='text-2xl sm:text-3xl font-bold text-gray-300'>
-                        {/* Aqui entra o texto sobre ITA e FIAP */}
                         {texts.role}
                     </h2>
                     <p className='py-4 text-gray-400 max-w-[90%] md:max-w-[80%]'>

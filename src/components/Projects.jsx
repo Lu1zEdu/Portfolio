@@ -14,9 +14,9 @@ const Projects = ({ language }) => {
     // Mapeamento dos botões de filtro
     const categories = {
         all: language === 'pt' ? 'Todos' : 'All',
-        work: language === 'pt' ? 'Trabalho (ITA)' : 'Work',
+        work: language === 'pt' ? 'Trabalho' : 'Work',
         college: language === 'pt' ? 'Faculdade (FIAP)' : 'College',
-        personal: language === 'pt' ? 'Pessoais / Labs' : 'Personal / Labs' // <-- Adicionado aqui
+        personal: language === 'pt' ? 'Pessoais / Labs' : 'Personal / Labs'
     };
 
     return (
@@ -36,8 +36,8 @@ const Projects = ({ language }) => {
                             key={key}
                             onClick={() => setFilter(key)}
                             className={`px-4 py-2 rounded-full border transition-all ${filter === key
-                                    ? 'bg-accent border-accent text-white shadow-[0_0_10px_#8b5cf6]'
-                                    : 'border-gray-600 text-gray-400 hover:text-white hover:border-white'
+                                ? 'bg-accent border-accent text-white shadow-[0_0_10px_#8b5cf6]'
+                                : 'border-gray-600 text-gray-400 hover:text-white hover:border-white'
                                 }`}
                         >
                             {categories[key]}

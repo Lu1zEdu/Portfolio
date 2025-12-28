@@ -31,7 +31,7 @@ O projeto foi construído utilizando as melhores práticas do desenvolvimento we
 * **Estilização:** [Tailwind CSS](https://tailwindcss.com/) (Design responsivo e utilitário).
 * **Ícones:** [React Icons](https://react-icons.github.io/react-icons/) (FontAwesome `fa` family).
 * **Efeitos Visuais:** [React Tilt](https://www.npmjs.com/package/react-tilt) (Efeito de paralaxe 3D).
-* **Deploy:** Vercel / Netlify (Compatível).
+* **Deploy:** GitHub Pages.
 
 ---
 
@@ -53,6 +53,17 @@ src/
 
 ```
 
+---
+
+## 📬 Contato
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/luiz-eduardo-da-silva-pinto)
+[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:le6269199@gmail.com)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lu1zedu)
+
+</div>
 
 ---
 

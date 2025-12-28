@@ -8,7 +8,6 @@ const Navbar = ({ toggleLanguage, currentLang, texts }) => {
         setNav(!nav);
     };
 
-    // Efeito para adicionar sombra na barra quando rolar a página
     useEffect(() => {
         const handleShadow = () => {
             if (window.scrollY >= 90) {
@@ -23,7 +22,7 @@ const Navbar = ({ toggleLanguage, currentLang, texts }) => {
     const links = [
         { id: 1, text: texts.home, href: '#hero' },
         { id: 2, text: texts.about, href: '#about' },
-        { id: 3, text: 'Skills', href: '#skills' }, // Adicionamos o link para Skills
+        { id: 3, text: 'Skills', href: '#skills' },
         { id: 4, text: texts.projects, href: '#projects' },
         { id: 5, text: texts.contact, href: '#contact' },
     ];
@@ -39,7 +38,6 @@ const Navbar = ({ toggleLanguage, currentLang, texts }) => {
                 </a>
 
                 <div>
-                    {/* MENU DESKTOP */}
                     <ul className='hidden md:flex items-center'>
                         {links.map((link) => (
                             <li key={link.id} className='ml-10 text-sm uppercase hover:text-accent font-medium text-gray-300 transition-colors'>
@@ -58,14 +56,12 @@ const Navbar = ({ toggleLanguage, currentLang, texts }) => {
                         </li>
                     </ul>
 
-                    {/* ÍCONE HAMBURGUER (MOBILE) */}
                     <div onClick={handleNav} className='md:hidden cursor-pointer text-gray-300'>
                         <span className="text-3xl">☰</span>
                     </div>
                 </div>
             </div>
 
-            {/* MENU MOBILE (OVERLAY) */}
             <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
                 <div className={
                     nav
@@ -89,7 +85,7 @@ const Navbar = ({ toggleLanguage, currentLang, texts }) => {
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
                             {links.map((link) => (
-                                <a href={link.href} key={link.id} onClick={() => setNav(false)}> {/* Fecha menu ao clicar */}
+                                <a href={link.href} key={link.id} onClick={() => setNav(false)}>
                                     <li className='py-4 text-sm text-gray-300 hover:text-accent border-b border-gray-800'>
                                         {link.text}
                                     </li>

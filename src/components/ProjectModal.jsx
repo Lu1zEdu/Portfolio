@@ -8,7 +8,6 @@ const ProjectModal = ({ project, onClose, language }) => {
         if (e.target.id === 'modal-overlay') onClose();
     };
 
-    // Função auxiliar para verificar se o link é válido
     const hasLink = (url) => url && url.length > 1 && url !== "#";
 
     return (
@@ -27,7 +26,6 @@ const ProjectModal = ({ project, onClose, language }) => {
                 </button>
 
                 <div className="grid md:grid-cols-2">
-                    {/* Imagem */}
                     <div className="h-64 md:h-full w-full bg-black">
                         <img
                             src={project.img}
@@ -36,7 +34,6 @@ const ProjectModal = ({ project, onClose, language }) => {
                         />
                     </div>
 
-                    {/* Conteúdo */}
                     <div className="p-8 max-h-[80vh] overflow-y-auto">
                         <h2 className="text-3xl font-bold text-white mb-2">{project.title}</h2>
 
@@ -61,9 +58,7 @@ const ProjectModal = ({ project, onClose, language }) => {
                             ))}
                         </div>
 
-                        {/* BOTÕES COM LÓGICA BOOLEANA */}
                         <div className="flex gap-4">
-                            {/* Só mostra botão GitHub se tiver link */}
                             {hasLink(project.gitUrl) && (
                                 <a
                                     href={project.gitUrl}
@@ -75,7 +70,6 @@ const ProjectModal = ({ project, onClose, language }) => {
                                 </a>
                             )}
 
-                            {/* Só mostra botão Demo se tiver link */}
                             {hasLink(project.previewUrl) && (
                                 <a
                                     href={project.previewUrl}
@@ -87,7 +81,6 @@ const ProjectModal = ({ project, onClose, language }) => {
                                 </a>
                             )}
 
-                            {/* Mensagem caso não tenha links públicos ainda */}
                             {!hasLink(project.gitUrl) && !hasLink(project.previewUrl) && (
                                 <p className='text-sm text-gray-500 italic w-full text-center border border-gray-700 p-2 rounded'>
                                     {language === 'pt' ? 'Código privado ou em desenvolvimento.' : 'Private code or under development.'}

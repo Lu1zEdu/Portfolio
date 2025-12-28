@@ -4,12 +4,10 @@ import {
 } from 'react-icons/fa';
 
 export const projects = [
-    // --- PROJETOS DESTAQUE (ENTERPRISE) ---
     {
         id: 1,
         title: "LPP System (ITA)",
         category: "work",
-        // Imagem: Laboratório de Tecnologia/Robótica
         img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop",
         desc_pt: "Sistema de controle e automação para o laboratório do ITA.",
         desc_en: "Control and automation system for ITA laboratory.",
@@ -28,7 +26,6 @@ export const projects = [
         id: 2,
         title: "Includ.IA",
         category: "college",
-        // Imagem: Inteligência Artificial Abstrata
         img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
         desc_pt: "Plataforma premiada de recrutamento com IA Generativa.",
         desc_en: "Award-winning recruitment platform powered by Generative AI.",
@@ -47,7 +44,6 @@ export const projects = [
         id: 3,
         title: "ApiAnime (.NET 9)",
         category: "personal",
-        // Imagem: Código em tela escura (Matrix style)
         img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop",
         desc_pt: "API robusta com Clean Architecture e .NET 9.",
         desc_en: "Robust API featuring Clean Architecture and .NET 9.",
@@ -64,25 +60,6 @@ export const projects = [
     },
     {
         id: 4,
-        title: "MeuEcommerceApp",
-        category: "college",
-        // Imagem: Celular com aplicativo
-        img: "/icone.jpg",
-        desc_pt: "App mobile completo com Firebase e Internacionalização.",
-        desc_en: "Full mobile app with Firebase and Internationalization.",
-        long_desc_pt: "Protótipo Mobile de alta fidelidade desenvolvido com React Native. Possui funcionalidades reais: autenticação segura, carrinho de compras e suporte nativo a múltiplos idiomas.",
-        long_desc_en: "High-fidelity Mobile prototype built with React Native. Features real functionalities: secure authentication, shopping cart, and native multi-language support.",
-        gitUrl: "https://github.com/lu1zedu/meuecommerceapp",
-        previewUrl: "https://expo.dev/accounts/m3rl1m/projects/MeuEcommerceApp",
-        tech_details: [
-            { name: "React Native", icon: <FaReact className="text-blue-400" />, purpose_pt: "Mobile Híbrido.", purpose_en: "Hybrid Mobile." },
-            { name: "Firebase", icon: <FaFire className="text-yellow-500" />, purpose_pt: "Backend Serverless.", purpose_en: "Serverless Backend." },
-            { name: "TypeScript", icon: <FaCode className="text-blue-600" />, purpose_pt: "Tipagem.", purpose_en: "Type safety." },
-            { name: "Context API", icon: <FaProjectDiagram className="text-gray-200" />, purpose_pt: "Estado Global.", purpose_en: "Global State." }
-        ]
-    },
-    {
-        id: 5,
         title: "ApiSteam",
         category: "personal",
         // Imagem: Setup Gamer / Controle
@@ -100,12 +77,10 @@ export const projects = [
         ]
     },
 
-    // --- COLEÇÕES DE ESTUDOS ---
     {
-        id: 6,
+        id: 5,
         title: "CS Algorithms & Games",
         category: "personal",
-        // Imagem: Arcade Retro / Pixel Art
         img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop",
         desc_pt: "Coleção de algoritmos clássicos: Tetris, Sudoku, Chat.",
         desc_en: "Collection of classic algorithms: Tetris, Sudoku, Chat.",
@@ -120,10 +95,9 @@ export const projects = [
         ]
     },
     {
-        id: 7,
+        id: 6,
         title: "Legacy Systems",
         category: "personal",
-        // Imagem: Computador Antigo / Mainframe
         img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
         desc_pt: "Sistemas bancários e científicos em Cobol & Fortran.",
         desc_en: "Banking and scientific systems in Cobol & Fortran.",
@@ -138,10 +112,9 @@ export const projects = [
         ]
     },
     {
-        id: 8,
+        id: 7,
         title: "C Programming Studies",
         category: "personal",
-        // Imagem: Código C puro
         img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1000&auto=format&fit=crop",
         desc_pt: "Algoritmos fundamentais e manipulação de memória em C.",
         desc_en: "Fundamental algorithms and memory manipulation in C.",
